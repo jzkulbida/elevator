@@ -10,8 +10,11 @@ if __name__ == '__main__':
     start_floor = args.start
 
     # parse the "floors" argument and split it into one or more floors
+    floors_string = args.floors
     floors_to_visit = []
-    splits = args.floors.split(',')
+    # replace ',' with space, so that we can tolerate leading, trailing, or repeating commas
+    floors_string = floors_string.replace(",", " ")
+    splits = floors_string.split()
     parse_ok = True
     for i, f in enumerate(splits):
         try:
