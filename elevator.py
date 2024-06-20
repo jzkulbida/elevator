@@ -40,7 +40,7 @@ if __name__ == '__main__':
     previous_floor = start_floor
     for current_floor in floors_to_visit:
         if previous_floor == current_floor:
-            print(f"*** Warning: found repeated floors: {previous_floor},{current_floor}, ignoring one")
+            print(f"*** Warning: found repeating floors: {previous_floor},{current_floor}, keeping one")
         else:
             output_floors += f",{current_floor}"
             total_time += travel_time_per_floor * abs(current_floor - previous_floor)
