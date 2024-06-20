@@ -5,12 +5,12 @@
 Python must be installed on the OS 
 
 ## Usage: 
-python elevator.py start=<start floor num> floors=<floors to visit>
+python elevator.py start=[start floor num] floors=[floors to visit]
 
 ## Arguments:
-<start floor num>: an integer specifying the starting floor
+[start floor num]: an integer specifying the starting floor
 
-<floors to visit>: a comma separated list of numbers, specifying the floors to visit
+[floors to visit]: a comma separated list of numbers, specifying the floors to visit
 
 Note: <floors to visit> should not contain white space, unless the entire string is surrounded by quotes
 
